@@ -5,94 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pokémon Trade List</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #000;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .tabs {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    .tab {
-      padding: 10px 20px;
-      border: 1px solid #ccc;
-      border-bottom: none;
-      cursor: pointer;
-      background: #eee;
-      margin-right: 5px;
-      border-radius: 10px 10px 0 0;
-    }
-    .tab.active {
-      background: white;
-      font-weight: bold;
-    }
-    .tab-content {
-      display: none;
-    }
-    .tab-content.active {
-      display: block;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 0 auto 30px auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .search-box {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .search-box input {
-      padding: 5px;
-      width: 60%;
-      max-width: 300px;
-    }
-    .pokemon-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-    }
-    .pokemon {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      text-align: center;
-      padding: 10px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    }
-    .pokemon img {
-      width: 50px;
-      height: 50px;
-    }
-    .name {
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .number {
-      color: #666;
-    }
-    .extra-info {
-      font-size: 0.85em;
-      color: #444;
-      margin-top: 4px;
-    }
-    .for-trade {
-      background-color: #fff8d6;
-    }
-    .looking-for {
-      background-color: #d6f0ff;
-    }
-  </style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .tab {
+    padding: 10px 20px;
+    border: 1px solid #444;
+    border-bottom: none;
+    cursor: pointer;
+    background: #222;
+    margin-right: 5px;
+    border-radius: 10px 10px 0 0;
+    color: #ccc;
+  }
+  .tab.active {
+    background: #333;
+    font-weight: bold;
+    color: #fff;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  .section {
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+  }
+  .section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  .search-box {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .search-box input {
+    padding: 5px;
+    width: 60%;
+    max-width: 300px;
+    background: #1e1e1e;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  .pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  .pokemon {
+    background: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+  .pokemon img {
+    width: 50px;
+    height: 50px;
+  }
+  .name {
+    font-weight: bold;
+    margin-top: 5px;
+    color: #fff;
+  }
+  .number {
+    color: #aaa;
+  }
+  .extra-info {
+    font-size: 0.85em;
+    color: #ccc;
+    margin-top: 4px;
+  }
+  .for-trade {
+    background-color: #4e4422;
+  }
+  .looking-for {
+    background-color: #1e3a4d;
+  }
+</style>
 </head>
 <body>
   <h1>Pokémon Trade List</h1>
