@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pokémon Trade List</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pokémon Trade List</title>
+<style>
   body {
     font-family: Arial, sans-serif;
     background: #121212;
@@ -124,185 +125,182 @@
 </style>
 </head>
 <body>
-  <h1>Pokémon Trade List</h1>
-  <div class="tabs">
-    <div class="tab" onclick="switchTab('paan')">Merooon Paan</div>
-    <div class="tab" onclick="switchTab('mero')">Meroooon Paan</div>
-  </div>
+<h1>Pokémon Trade List</h1>
+<div class="tabs">
+<div class="tab" onclick="switchTab('paan')">Merooon Paan</div>
+<div class="tab" onclick="switchTab('mero')">Meroooon Paan</div>
+</div>
+<!-- PAAN TAB -->
+<div class="tab-content" id="paan"><div class="section">
+<div style="text-align:center; margin-bottom:10px;">
+<img alt="Merooon" src="sprites/Merooon.jpg" style="width: 10%; height: auto; border-radius: 50%;"/>
+</div>
+<h2>Looking For</h2>
+<div class="search-box"><input onkeyup="filterPokemon(event, 'paan-looking')" placeholder="Search..." type="text"/></div>
+<div class="pokemon-grid" id="paan-looking">
+<div class="pokemon looking-for">
+<img alt="Mr-mime" src="sprites/mr-mime.png"/>
+<div class="name">Mr. Mime</div>
+<div class="number">#0112</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Slugma" src="sprites/slugma.png"/>
+<div class="name">Slugma</div>
+<div class="number">#0218</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Azurill" src="sprites/azurill.png"/>
+<div class="name">Azurill</div>
+<div class="number">#0298</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Spinda" src="sprites/spinda.png"/>
+<div class="name">Spinda</div>
+<div class="number">#0327</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Duskull" src="sprites/duskull.png"/>
+<div class="name">Duskull</div>
+<div class="number">#0355</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Relicanth" src="sprites/relicanth.png"/>
+<div class="name">Relicanth</div>
+<div class="number">#0369</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Pachirisu" src="sprites/pachirisu.png"/>
+<div class="name">Pachirisu</div>
+<div class="number">#0417</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - 
+          </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Chingling" src="sprites/chingling.png"/>
+<div class="name">Chingling</div>
+<div class="number">#0433</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - 
+          </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Mime.Jr" src="sprites/mime-jr.png"/>
+<div class="name">Mime Jr.</div>
+<div class="number">#0439</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - 
+          </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Chatot" src="sprites/chatot.png"/>
+<div class="name">Chatot</div>
+<div class="number">#0441</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - 
+          </div>
+</div>
+</div>
+</div><div class="section">
+<h2>For Trade</h2>
+<div class="search-box"><input onkeyup="filterPokemon(event, 'paan-trade')" placeholder="Search..." type="text"/></div>
+<div class="pokemon-grid" id="paan-trade">
+<div class="pokemon for-trade">
+<img alt="Charizard" src="sprites/0006.png"/>
+<div class="name">Charizard</div>
+<div class="number">#0006</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+</div>
+</div></div>
 
-  <!-- PAAN TAB -->
-  <div id="paan" class="tab-content">
-    <div class="section">
-       <div style="text-align:center; margin-bottom:10px;">
-      <img src="sprites/Merooon.jpg" alt="Merooon" style="width: 10%; height: auto; border-radius: 50%;" />
-       </div>
-      <h2>Looking For</h2>
-      <div class="search-box"><input type="text" placeholder="Search..." onkeyup="filterPokemon(event, 'paan-looking')"></div>
-      <div class="pokemon-grid" id="paan-looking">
-        <div class="pokemon looking-for">
-          <img src="sprites/mr-mime.png" alt="Mr-mime">
-          <div class="name">Mr. Mime</div>
-          <div class="number">#0112</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/slugma.png" alt="Slugma">
-          <div class="name">Slugma</div>
-          <div class="number">#0218</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/azurill.png" alt="Azurill">
-          <div class="name">Azurill</div>
-          <div class="number">#0298</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/spinda.png" alt="Spinda">
-          <div class="name">Spinda</div>
-          <div class="number">#0327</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/duskull.png" alt="Duskull">
-          <div class="name">Duskull</div>
-          <div class="number">#0355</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/relicanth.png" alt="Relicanth">
-          <div class="name">Relicanth</div>
-          <div class="number">#0369</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-         <div class="pokemon looking-for">
-          <img src="sprites/pachirisu.png" alt="Pachirisu">
-          <div class="name">Pachirisu</div>
-          <div class="number">#0417</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - 
-          </div>
-                  </div>
-            <div class="pokemon looking-for">
-          <img src="sprites/chingling.png" alt="Chingling">
-          <div class="name">Chingling</div>
-          <div class="number">#0433</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - 
-          </div>
-                     </div>
-               <div class="pokemon looking-for">
-          <img src="sprites/mime-jr.png" alt="Mime.Jr">
-          <div class="name">Mime Jr.</div>
-          <div class="number">#0439</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - 
-          </div>
-                        </div>
-                  <div class="pokemon looking-for">
-          <img src="sprites/chatot.png" alt="Chatot">
-          <div class="name">Chatot</div>
-          <div class="number">#0441</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - 
-          </div>
-         </div>
-        </div>
-    </div>
-    </div>
-    <div class="section">
-      <h2>For Trade</h2>
-      <div class="search-box"><input type="text" placeholder="Search..." onkeyup="filterPokemon(event, 'paan-trade')"></div>
-      <div class="pokemon-grid" id="paan-trade">
-        <div class="pokemon for-trade">
-          <img src="sprites/0006.png" alt="Charizard">
-          <div class="name">Charizard</div>
-          <div class="number">#0006</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-      </div>
-      </div>
-  </div>
-  <!-- ✅ END of paan tab -->
 
-  <!-- MERO TAB -->
-  <div id="mero" class="tab-content">
-    <div class="section">
-        <div style="text-align:center; margin-bottom:10px;">
-      <img src="sprites/Meroooon.jpg" alt="Meroooon" style="width: 10%; height: auto; border-radius: 50%;" />
-       </div>
-      <h2>Looking For</h2>
-      <div class="search-box"><input type="text" placeholder="Search..." onkeyup="filterPokemon(event, 'mero-looking')"></div>
-      <div class="pokemon-grid" id="mero-looking">
-        <div class="pokemon looking-for">
-          <img src="sprites/dialga-origin.png" alt="Dialga-O">
-          <div class="name">Dialga Origin</div>
-          <div class="number">#0483</div>
-          <div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-             <div class="pokemon looking-for">
-          <img src="sprites/palkia-origin.png" alt="Palkia-O">
-          <div class="name">Palkia Origin</div>
-          <div class="number">#0484</div>
-          <div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/kyurem.png" alt="Kyurem">
-          <div class="name">Kyurem</div>
-          <div class="number">#0646</div>
-          <div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-        <div class="pokemon looking-for">
-          <img src="sprites/necrozma.png" alt="Necrozma">
-          <div class="name">Necrozma</div>
-          <div class="number">#0800</div>
-          <div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <h2>For Trade</h2>
-      <div class="search-box"><input type="text" placeholder="Search..." onkeyup="filterPokemon(event, 'mero-trade')"></div>
-      <div class="pokemon-grid" id="mero-trade">
-        <div class="pokemon for-trade">
-          <img src="sprites/0018.png" alt="Pidgeot">
-          <div class="name">Pidgeot</div>
-          <div class="number">#0018</div>
-          <div class="extra-info">Special Background: No</div>
-          <div class="extra-info">Legacy Move: No</div>
-          <div class="extra-info">Notes: - </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script>
+
+
+
+
+<!-- ✅ END of paan tab -->
+<!-- MERO TAB -->
+<div class="tab-content" id="mero"><div class="section">
+<div style="text-align:center; margin-bottom:10px;">
+<img alt="Meroooon" src="sprites/Meroooon.jpg" style="width: 10%; height: auto; border-radius: 50%;">
+</img></div>
+<h2>Looking For</h2>
+<div class="search-box"><input onkeyup="filterPokemon(event, 'mero-looking')" placeholder="Search..." type="text"/></div>
+<div class="pokemon-grid" id="mero-looking">
+<div class="pokemon looking-for">
+<img alt="Dialga-O" src="sprites/dialga-origin.png"/>
+<div class="name">Dialga Origin</div>
+<div class="number">#0483</div>
+<div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Palkia-O" src="sprites/palkia-origin.png"/>
+<div class="name">Palkia Origin</div>
+<div class="number">#0484</div>
+<div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Kyurem" src="sprites/kyurem.png"/>
+<div class="name">Kyurem</div>
+<div class="number">#0646</div>
+<div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+<div class="pokemon looking-for">
+<img alt="Necrozma" src="sprites/necrozma.png"/>
+<div class="name">Necrozma</div>
+<div class="number">#0800</div>
+<div class="extra-info">Special Background: รับ mirror trade ทั้งมี หรือ ไม่มี</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+</div>
+</div><div class="section">
+<h2>For Trade</h2>
+<div class="search-box"><input onkeyup="filterPokemon(event, 'mero-trade')" placeholder="Search..." type="text"/></div>
+<div class="pokemon-grid" id="mero-trade">
+<div class="pokemon for-trade">
+<img alt="Pidgeot" src="sprites/0018.png"/>
+<div class="name">Pidgeot</div>
+<div class="number">#0018</div>
+<div class="extra-info">Special Background: No</div>
+<div class="extra-info">Legacy Move: No</div>
+<div class="extra-info">Notes: - </div>
+</div>
+</div>
+</div></div>
+<script>
     window.addEventListener('DOMContentLoaded', () => {
       const savedTab = localStorage.getItem('selectedTab') || 'paan';
       switchTab(savedTab);
