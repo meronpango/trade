@@ -133,7 +133,32 @@
 <!-- PAAN TAB -->
 <div class="tab-content" id="paan"><div class="section">
 <div style="text-align:center; margin-bottom:10px;">
-<img alt="Merooon" src="sprites/Merooon.jpg" style="width: 10%; height: auto; border-radius: 50%;"/>
+  <img src="sprites/Merooon.jpg" alt="Merooon" style="width: 10%; height: auto; border-radius: 50%;" />
+  <div style="
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #eee;
+    padding: 8px 12px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 8px;
+    font-size: 0.9em;
+    max-width: 300px;
+  ">
+    This is my main account
+    <div style="
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -8px;
+      width: 0;
+      height: 0;
+      border-top: 8px solid #2a2a2a;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    "></div>
+  </div>
 </div>
 <h2>Looking For</h2>
 <div class="search-box"><input onkeyup="filterPokemon(event, 'paan-looking')" placeholder="Search..." type="text"/></div>
